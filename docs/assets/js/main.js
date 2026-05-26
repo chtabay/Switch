@@ -74,12 +74,11 @@
   // ---------- Configurateur (page marketplace) ----------
   const cfg = document.querySelector("[data-configurator]");
   if (cfg) {
-    const PACKS = {
-      decouverte: { name: "Pack Découverte", price: 1490 },
-      switch: { name: "Pack Switch Rapide", price: 3490 },
-      it: { name: "Pack IT Isolé", price: 2190 },
-      pro: { name: "Pack Exploitation Pro", price: 4290 },
-      full: { name: "Pack Full Concept", price: 9990 },
+    const SURFACE_PACKS = {
+      30: { name: "Forfait Starter - home staging S", price: 1900 },
+      60: { name: "Forfait Standard - home staging M", price: 3900 },
+      100: { name: "Forfait Avancé - home staging L", price: 6900 },
+      150: { name: "Forfait Flagship - home staging XL", price: 9900 },
     };
 
     const choices = {
@@ -105,23 +104,25 @@
     const summaryTotal = document.querySelector("[data-summary-total]");
 
     function compute() {
-      // Recommandation heuristique
       const lines = [];
+      const surf = parseInt(choices.surface, 10);
+      const staging = SURFACE_PACKS[surf] || SURFACE_PACKS[60];
+      lines.push({ k: staging.name, v: staging.price });
 
       if (choices.profile === "cafe-bar") {
-        lines.push({ k: "Pack Switch Rapide", v: PACKS.switch.price });
-        lines.push({ k: "Pack IT Isolé", v: PACKS.it.price });
+        lines.push({ k: "Module signalétique double identité", v: 1190 });
+        lines.push({ k: "Module éclairage deux scènes", v: 760 });
       } else if (choices.profile === "atelier") {
-        lines.push({ k: "Pack Découverte", v: PACKS.decouverte.price });
-        lines.push({ k: "Pack Switch Rapide", v: PACKS.switch.price });
+        lines.push({ k: "Module mobilier atelier mobile", v: 980 });
+        lines.push({ k: "Module cloisons légères", v: 690 });
       } else if (choices.profile === "popup") {
-        lines.push({ k: "Pack Découverte", v: PACKS.decouverte.price });
-        lines.push({ k: "Pack IT Isolé", v: PACKS.it.price });
+        lines.push({ k: "Module pop-up récurrent", v: 890 });
+        lines.push({ k: "Signalétique aimantée", v: 420 });
       } else {
-        lines.push({ k: "Pack Full Concept", v: PACKS.full.price });
+        lines.push({ k: "Module standard multi-opérateurs", v: 2490 });
+        lines.push({ k: "Accompagnement exploitation 3 mois", v: 1800 });
       }
 
-      const surf = parseInt(choices.surface, 10);
       const casiers = Math.max(2, Math.ceil(surf / 20));
       lines.push({ k: `Casiers sécurisés × ${casiers}`, v: casiers * 240 });
 
