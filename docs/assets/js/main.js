@@ -82,7 +82,7 @@
     };
 
     const choices = {
-      profile: "cafe-bar",
+      profile: "bureau-boutique",
       surface: "60",
       switches: "2",
       it: "isole",
@@ -109,42 +109,45 @@
       const staging = SURFACE_PACKS[surf] || SURFACE_PACKS[60];
       lines.push({ k: staging.name, v: staging.price });
 
-      if (choices.profile === "cafe-bar") {
-        lines.push({ k: "Module signalétique double identité", v: 1190 });
-        lines.push({ k: "Module éclairage deux scènes", v: 760 });
-      } else if (choices.profile === "atelier") {
-        lines.push({ k: "Module mobilier atelier mobile", v: 980 });
-        lines.push({ k: "Module cloisons légères", v: 690 });
-      } else if (choices.profile === "popup") {
-        lines.push({ k: "Module pop-up récurrent", v: 890 });
-        lines.push({ k: "Signalétique aimantée", v: 420 });
+      lines.push({ k: "Devanture numérique", v: 2490 });
+
+      if (choices.profile === "bureau-boutique") {
+        lines.push({ k: "Kit DA & éclairage (bureau ↔ boutique)", v: 890 });
+        const etals = Math.max(2, Math.ceil(surf / 25));
+        lines.push({ k: `Étals escamotables × ${etals}`, v: etals * 690 });
+      } else if (choices.profile === "cowork-popup") {
+        lines.push({ k: "Kit DA & éclairage (cowork ↔ pop-up)", v: 890 });
+        const etals = Math.max(2, Math.ceil(surf / 30));
+        lines.push({ k: `Étals escamotables × ${etals}`, v: etals * 690 });
+      } else if (choices.profile === "formation-vente") {
+        lines.push({ k: "Kit DA & éclairage (formation ↔ vente)", v: 890 });
+        const etals = Math.max(3, Math.ceil(surf / 20));
+        lines.push({ k: `Étals escamotables × ${etals}`, v: etals * 690 });
       } else {
-        lines.push({ k: "Module standard multi-opérateurs", v: 2490 });
+        lines.push({ k: "Kit DA & éclairage premium", v: 1490 });
         lines.push({ k: "Accompagnement exploitation 3 mois", v: 1800 });
       }
 
-      const casiers = Math.max(2, Math.ceil(surf / 20));
-      lines.push({ k: `Casiers sécurisés × ${casiers}`, v: casiers * 240 });
+      lines.push({ k: "Mur de casiers opérateurs", v: 1890 });
 
       if (choices.switches === "3" || choices.switches === "4+") {
-        lines.push({ k: "Comptoir mobile renforcé", v: 1290 });
+        lines.push({ k: "Station de caisse × 2", v: 1980 });
       } else {
-        lines.push({ k: "Comptoir mobile standard", v: 890 });
+        lines.push({ k: "Station de caisse légère", v: 990 });
       }
 
       if (choices.it === "isole") {
-        lines.push({ k: "Routeur multi-réseaux", v: 540 });
+        lines.push({ k: "Armoire Switch (routeur VLAN + tablette)", v: 1690 });
       } else if (choices.it === "premium") {
-        lines.push({ k: "Stack IT isolée premium", v: 1490 });
+        lines.push({ k: "Armoire Switch premium (VLAN + journal + monitoring)", v: 2490 });
       }
 
       if (choices.acces === "badge") {
-        lines.push({ k: "Serrures connectées + badges", v: 780 });
+        lines.push({ k: "Serrures connectées + badges NFC", v: 780 });
       } else if (choices.acces === "code") {
         lines.push({ k: "Codes temporaires + journal", v: 320 });
       }
 
-      // Forfait coordination
       lines.push({ k: "Installation & formation", v: 1200 });
 
       const total = lines.reduce((s, l) => s + l.v, 0);
