@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Switch — Un local. Plusieurs commerces. Zéro chaos.</title>
+  <meta name="description" content="Switch est l'infrastructure physique et logicielle qui permet à plusieurs commerçants d'opérer dans un même local, sans se gêner. Démo concept." />
+  <meta name="theme-color" content="#FAFAF7" />
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F59E0B'/%3E%3Cstop offset='1' stop-color='%236366F1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7' fill='url(%23g)'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Switch</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="index.html">Concept</a>
+      <a href="demo.html">Démo local</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="backoffice.html">Back-office</a>
+      <a class="nav-cta" href="marketplace.html#configurateur">Composer mon kit</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">Local commercial roulant</span>
+      <h1>Un local.<br/>Plusieurs commerces.<br/><span class="switch-word">Zéro chaos.</span></h1>
+      <p class="lead">
+        Switch transforme un seul emplacement en plusieurs commerces, qui se succèdent selon les heures, les jours ou les saisons. Une infrastructure pensée pour basculer d'un opérateur à l'autre&nbsp;en&nbsp;moins de 30&nbsp;minutes.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="demo.html">Voir une journée type →</a>
+        <a class="btn btn-ghost" href="marketplace.html#configurateur">Composer mon kit</a>
+      </div>
+
+      <div class="hero-meta">
+        <span><strong>+ 2 à 4×</strong> de taux d'occupation visé</span>
+        <span><strong>25 min</strong> de switch cible</span>
+        <span><strong>0 travaux</strong> entre opérateurs</span>
+      </div>
+    </div>
+
+    <!-- Carte locale : démonstration switch jour / soir -->
+    <div class="local-card" data-mode="day" aria-label="Aperçu d'un local Switch">
+      <div class="scene scene--day" aria-hidden="false">
+        <div class="scene-head">
+          <span>Café Lumière · 60 m²</span>
+          <span class="pill">8h — 16h</span>
+        </div>
+        <div class="scene-floor">
+          <div class="zone"><strong>Comptoir café</strong>Machine espresso, vitrine froide, caisse A.</div>
+          <div class="zone"><strong>Salle</strong>14 places, mange-debout, vitrine viennoiseries.</div>
+          <div class="zone"><strong>Stock dédié</strong>Casier A — grains, lait, gobelets.</div>
+          <div class="zone"><strong>Signalétique</strong>Enseigne « Café Lumière ». Menu lunch.</div>
+        </div>
+        <div class="scene-bar"><span class="dot" aria-hidden="true"></span> Wi-Fi · Caisse A · Éclairage chaud</div>
+      </div>
+
+      <div class="scene scene--night is-hidden" aria-hidden="true">
+        <div class="scene-head">
+          <span>Cellier &amp; Cie · 60 m²</span>
+          <span class="pill">18h — 23h</span>
+        </div>
+        <div class="scene-floor">
+          <div class="zone"><strong>Bar à vin</strong>Tireuses, frigo vins, caisse B.</div>
+          <div class="zone"><strong>Salle</strong>10 places assises, 2 mange-debout, ambiance tamisée.</div>
+          <div class="zone"><strong>Stock dédié</strong>Casier B — bouteilles, verres dédiés.</div>
+          <div class="zone"><strong>Signalétique</strong>Enseigne « Cellier &amp; Cie ». Ardoise dégustation.</div>
+        </div>
+        <div class="scene-bar"><span class="dot" aria-hidden="true"></span> Wi-Fi B · Caisse B · Éclairage tamisé</div>
+      </div>
+
+      <button class="switch-toggle" aria-label="Basculer entre jour et soir">
+        <span class="knob" aria-hidden="true"></span>
+        <span class="label">8h — Coffee shop</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEME -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Problème</span>
+      <h2>Les locaux dorment la moitié du temps.</h2>
+      <p class="lead">
+        Un café est vide le soir. Un bar est vide la journée. Une boutique est fermée le dimanche. Les loyers commerciaux, eux, sont dus 24/7. Côté commerçants, monter un projet exige un bail long, des travaux et un emplacement figé.
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon" aria-hidden="true">🏚️</div>
+        <h3>Sous-occupation</h3>
+        <p>Un local de centre-ville est typiquement actif 30 à 50&nbsp;% du temps utile. Le reste, c'est du loyer payé pour de l'inactivité.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">🪑</div>
+        <h3>Investissement bloquant</h3>
+        <p>Pas de showroom, pas de pop-up, pas de test. Le ticket d'entrée d'un commerce est trop élevé pour la plupart des bons concepts.</p>
+      </div>
+      <div class="card">
+        <div class="icon" aria-hidden="true">🧩</div>
+        <h3>Co-location chaotique</h3>
+        <p>Partager un local sans cadre, c'est se marcher dessus&nbsp;: stocks mélangés, IT partagée, ménage flou, responsabilités floues.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Solution</span>
+      <h2>Une infrastructure conçue pour le <em>switch</em>.</h2>
+      <p class="lead">
+        Switch outille le local physiquement et logiciellement pour qu'un nouvel opérateur puisse prendre la main proprement, rapidement, et sans dépendre de celui qui part.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div>
+          <h3>Séparation des usages</h3>
+          <p>Chaque opérateur a ses zones, ses casiers, son réseau Wi-Fi, sa caisse, sa signalétique. Aucun risque de contamination de stocks, de données ou de marque.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>Mutualisation maîtrisée</h3>
+          <p>Mobilier mobile, éclairage programmable, vitrines : partagés. Les responsabilités (nettoyage, casse, consommables) sont écrites et tracées.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>Switch outillé</h3>
+          <p>Checklists de sortie et d'entrée, état des lieux numérique, déclaration d'incident, validation « local prêt ». 25 minutes en cible, traçable au créneau.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <h3>Marketplace de l'équipement</h3>
+          <p>Packs prêts à installer, produits compatibles entre eux, prestations d'audit, d'installation et de maintenance. Vous équipez votre local sans ré-inventer la roue.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEE TYPE -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Journée type</span>
+      <h2>Un local, deux exploitants, un week-end ouvert.</h2>
+      <p>Voici comment un local de 60&nbsp;m² en centre-ville peut tourner du lundi au dimanche sans qu'aucun opérateur ne dépende d'un autre.</p>
+    </div>
+
+    <div class="timeline" aria-label="Timeline d'une journée type Switch">
+      <div class="timeline-track" aria-hidden="true">
+        <div class="timeline-segment" style="left:4%">Café · 8h–15h</div>
+        <div class="timeline-segment" style="left:46%; background: rgba(0,0,0,.5);">Switch</div>
+        <div class="timeline-segment" style="left:58%">Bar à vin · 18h–23h</div>
+
+        <div class="timeline-marker" style="left:0%"><span class="timeline-label">00h</span></div>
+        <div class="timeline-marker" style="left:33%"><span class="timeline-label">08h</span></div>
+        <div class="timeline-marker" style="left:62%"><span class="timeline-label">15h</span></div>
+        <div class="timeline-marker" style="left:75%"><span class="timeline-label">18h</span></div>
+        <div class="timeline-marker" style="left:96%"><span class="timeline-label">23h</span></div>
+      </div>
+
+      <div class="timeline-legend">
+        <span><span class="sw" style="background:var(--day)"></span> Café Lumière — lunch &amp; coffee</span>
+        <span><span class="sw" style="background:#C7C7CC"></span> Switch (nettoyage + état des lieux)</span>
+        <span><span class="sw" style="background:var(--night)"></span> Cellier &amp; Cie — bar à vin</span>
+      </div>
+    </div>
+
+    <div class="grid grid-4 mt-4">
+      <div class="stat"><div class="num">25 min</div><div class="lbl">Temps de switch cible</div></div>
+      <div class="stat"><div class="num">2,3×</div><div class="lbl">Multiple de revenu / m²</div></div>
+      <div class="stat"><div class="num">0</div><div class="lbl">Travaux entre opérateurs</div></div>
+      <div class="stat"><div class="num">100 %</div><div class="lbl">Traçabilité des créneaux</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICES PAR ACTEUR -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Bénéfices par acteur</span>
+      <h2>Trois acteurs. Une promesse à chacun.</h2>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card card-ink">
+        <div class="card-flag">Propriétaire</div>
+        <h3>Rentabiliser chaque créneau</h3>
+        <p>Augmenter le taux d'occupation, multiplier les sources de revenus sur un même espace, réduire les périodes creuses.</p>
+      </div>
+      <div class="card card-day">
+        <div class="card-flag" style="color:var(--day)">Commerçant invité</div>
+        <h3>Tester sans bail long</h3>
+        <p>Accéder à un emplacement déjà équipé, sans bail commercial, ni travaux, ni investissement complet. Brancher son concept et opérer.</p>
+      </div>
+      <div class="card card-night">
+        <div class="card-flag" style="color:var(--night)">Client final</div>
+        <h3>Découvrir, à un même endroit</h3>
+        <p>Un lieu vivant, renouvelé, mais cohérent. Identifier facilement quel commerce opère à quel moment et profiter de l'expérience du jour.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="container center">
+    <h2>Prêt à voir Switch en vrai ?</h2>
+    <p class="lead" style="margin-inline:auto">Explorez une journée détaillée sur la page démo, ou composez en 1 minute le kit recommandé pour votre local.</p>
+    <div class="flex" style="justify-content:center; margin-top: 18px;">
+      <a class="btn btn-primary" href="demo.html">Voir la démo d'un local →</a>
+      <a class="btn btn-ghost" href="marketplace.html#configurateur">Composer mon kit</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div>© <span data-year>2026</span> Switch — démo concept. Données fictives.</div>
+    <div class="flex">
+      <a href="https://github.com/chtabay/Switch" target="_blank" rel="noopener">Repo GitHub</a>
+      <a href="backoffice.html">Back-office</a>
+      <a href="marketplace.html">Marketplace</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

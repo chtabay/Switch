@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Switch — Démo d'un local</title>
+  <meta name="description" content="Démonstration concrète d'un local Switch : journée type, zones, checklist de switch, état des lieux et incidents." />
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F59E0B'/%3E%3Cstop offset='1' stop-color='%236366F1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7' fill='url(%23g)'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Switch</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="index.html">Concept</a>
+      <a href="demo.html">Démo local</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="backoffice.html">Back-office</a>
+      <a class="nav-cta" href="marketplace.html#configurateur">Composer mon kit</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+  </div>
+</header>
+
+<section style="padding-block: clamp(40px, 6vw, 72px);">
+  <div class="container">
+    <span class="eyebrow">Démo · Local 60 m² · Centre-ville</span>
+    <h1>Un café le jour, un bar à vin le soir.</h1>
+    <p class="lead">
+      Le même local opère deux concepts différents dans la même journée. Voici la timeline, les zones, les équipements et la checklist de switch utilisée par l'exploitant coordinateur.
+    </p>
+    <div class="flex mt-3">
+      <span class="badge badge--day">● Café Lumière — 8h–15h</span>
+      <span class="badge">● Switch — 15h–16h</span>
+      <span class="badge badge--night">● Cellier &amp; Cie — 18h–23h</span>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE DETAILLEE -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">1 · Timeline</span>
+      <h2>La journée, du premier expresso au dernier verre.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-track" aria-hidden="true">
+        <div class="timeline-segment" style="left:4%">Café · 8h–15h</div>
+        <div class="timeline-segment" style="left:46%; background: rgba(0,0,0,.5);">Switch</div>
+        <div class="timeline-segment" style="left:58%">Bar · 18h–23h</div>
+        <div class="timeline-marker" style="left:0%"><span class="timeline-label">00h</span></div>
+        <div class="timeline-marker" style="left:33%"><span class="timeline-label">08h</span></div>
+        <div class="timeline-marker" style="left:62%"><span class="timeline-label">15h</span></div>
+        <div class="timeline-marker" style="left:75%"><span class="timeline-label">18h</span></div>
+        <div class="timeline-marker" style="left:96%"><span class="timeline-label">23h</span></div>
+      </div>
+      <div class="timeline-legend">
+        <span><span class="sw" style="background:var(--day)"></span> Café Lumière — lunch &amp; coffee</span>
+        <span><span class="sw" style="background:#C7C7CC"></span> Switch (60 min, 25 min en cible)</span>
+        <span><span class="sw" style="background:var(--night)"></span> Cellier &amp; Cie — bar à vin</span>
+      </div>
+    </div>
+
+    <div class="grid grid-3 mt-4">
+      <div class="card card-day">
+        <div class="card-flag" style="color:var(--day)">07h45 — Ouverture</div>
+        <h3>Café Lumière</h3>
+        <p>Badge opérateur A. Caisse A, Wi-Fi A, éclairage chaud, ardoise lunch en place. Stocks dans casier A.</p>
+      </div>
+      <div class="card card-ink">
+        <div class="card-flag">15h00 — Switch</div>
+        <h3>Transition coordonnée</h3>
+        <p>Checklist sortie A. Nettoyage. État des lieux numérique. Stocks rangés. Caisse A clôturée. Vitrines vidées.</p>
+      </div>
+      <div class="card card-night">
+        <div class="card-flag" style="color:var(--night)">18h00 — Ouverture</div>
+        <h3>Cellier &amp; Cie</h3>
+        <p>Badge opérateur B. Caisse B, Wi-Fi B, éclairage tamisé, ardoise vins. Frigo B en service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVANT / APRES -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">2 · Avant / après</span>
+      <h2>Même m². Deux identités.</h2>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="local-card" data-mode="day" style="aspect-ratio: 4 / 3;">
+        <div class="scene scene--day">
+          <div class="scene-head">
+            <span>Café Lumière · 60 m²</span>
+            <span class="pill">8h — 15h</span>
+          </div>
+          <div class="scene-floor">
+            <div class="zone"><strong>Comptoir café</strong>Machine espresso, vitrine froide, caisse A.</div>
+            <div class="zone"><strong>Salle</strong>14 places assises, 4 mange-debout.</div>
+            <div class="zone"><strong>Vitrine</strong>Viennoiseries, salades, sandwichs du jour.</div>
+            <div class="zone"><strong>Ambiance</strong>Lumière chaude, playlist café, plantes.</div>
+          </div>
+          <div class="scene-bar"><span class="dot"></span> Wi-Fi A · Caisse A · Casier A</div>
+        </div>
+      </div>
+
+      <div class="local-card" data-mode="night" style="aspect-ratio: 4 / 3;">
+        <div class="scene scene--night">
+          <div class="scene-head">
+            <span>Cellier &amp; Cie · 60 m²</span>
+            <span class="pill">18h — 23h</span>
+          </div>
+          <div class="scene-floor">
+            <div class="zone"><strong>Bar à vin</strong>Tireuses, frigo vins, caisse B.</div>
+            <div class="zone"><strong>Salle</strong>10 places assises, 2 mange-debout, ambiance tamisée.</div>
+            <div class="zone"><strong>Vitrine</strong>Sélection bouteilles, planches charcuterie.</div>
+            <div class="zone"><strong>Ambiance</strong>Lumière tamisée, jazz/lounge, bougies LED.</div>
+          </div>
+          <div class="scene-bar"><span class="dot"></span> Wi-Fi B · Caisse B · Casier B</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="muted mt-3" style="font-size:.9rem">
+      Le mobilier mobile, l'éclairage programmable, la signalétique modulaire et les vitrines amovibles permettent ces deux configurations sans aucun travaux.
+    </p>
+  </div>
+</section>
+
+<!-- ZONES -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">3 · Zones du local</span>
+      <h2>Ce qui est mutualisé. Ce qui est dédié.</h2>
+    </div>
+
+    <div class="table-wrap">
+      <table class="bo">
+        <thead>
+          <tr>
+            <th>Zone</th>
+            <th>Statut</th>
+            <th>Équipement</th>
+            <th>Responsable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Comptoir / caisse</td>
+            <td><span class="badge badge--warn">Dédié par opérateur</span></td>
+            <td>Caisse A (TPE A) · Caisse B (TPE B)</td>
+            <td>Opérateur</td>
+          </tr>
+          <tr>
+            <td>Salle &amp; mobilier</td>
+            <td><span class="badge badge--ok">Mutualisé</span></td>
+            <td>Tables, chaises empilables, mange-debout</td>
+            <td>Exploitant coordinateur</td>
+          </tr>
+          <tr>
+            <td>Stockage sec / froid</td>
+            <td><span class="badge badge--warn">Dédié par opérateur</span></td>
+            <td>Casiers A / B, frigo A / B fermés à clé</td>
+            <td>Opérateur</td>
+          </tr>
+          <tr>
+            <td>Réseau IT</td>
+            <td><span class="badge badge--warn">Dédié par opérateur</span></td>
+            <td>Wi-Fi A / Wi-Fi B isolés, VLAN, routeur admin</td>
+            <td>Exploitant coordinateur</td>
+          </tr>
+          <tr>
+            <td>Signalétique extérieure</td>
+            <td><span class="badge badge--warn">Dédié par créneau</span></td>
+            <td>Enseigne LED commutable + bandeau aimanté</td>
+            <td>Opérateur entrant</td>
+          </tr>
+          <tr>
+            <td>Décoration / éclairage</td>
+            <td><span class="badge badge--ok">Mutualisé · paramétrable</span></td>
+            <td>Spots DALI, scène lumière « café » / « bar »</td>
+            <td>Exploitant coordinateur</td>
+          </tr>
+          <tr>
+            <td>Nettoyage / déchets</td>
+            <td><span class="badge">Mutualisé · facturé</span></td>
+            <td>Kit standard + passage prestataire 1×/jour</td>
+            <td>Prestataire externe</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST DE SWITCH -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">4 · Switch opérationnel</span>
+      <h2>La checklist de transition, cochée en 25 minutes.</h2>
+      <p>Cliquez sur les items pour voir avancer la barre de progression. Sur le terrain, ces étapes sont guidées par l'app Switch sur tablette.</p>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="checklist">
+        <h3>🟠 Sortie · Café Lumière <span class="muted" style="margin-left:auto; font-weight:500; font-size:.9rem;" data-check-counter>0 / 6</span></h3>
+        <div class="check-progress"><span></span></div>
+        <div class="check-item">
+          <input type="checkbox" id="o1" />
+          <label for="o1">Clôturer la caisse A et exporter le Z de caisse</label>
+          <span class="badge">2 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="o2" />
+          <label for="o2">Vider et nettoyer la vitrine réfrigérée A</label>
+          <span class="badge">5 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="o3" />
+          <label for="o3">Stocker matières premières dans le casier A</label>
+          <span class="badge">5 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="o4" />
+          <label for="o4">Retirer signalétique A (menu, ardoise, bandeau)</label>
+          <span class="badge">3 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="o5" />
+          <label for="o5">Nettoyage sol + plans de travail</label>
+          <span class="badge">8 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="o6" />
+          <label for="o6">Photos état des lieux + remise badge</label>
+          <span class="badge">2 min</span>
+        </div>
+      </div>
+
+      <div class="checklist">
+        <h3>🟣 Entrée · Cellier &amp; Cie <span class="muted" style="margin-left:auto; font-weight:500; font-size:.9rem;" data-check-counter>0 / 6</span></h3>
+        <div class="check-progress"><span></span></div>
+        <div class="check-item">
+          <input type="checkbox" id="i1" />
+          <label for="i1">Activer Wi-Fi B + connecter caisse B</label>
+          <span class="badge">2 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="i2" />
+          <label for="i2">Sortir bouteilles &amp; verres du casier B</label>
+          <span class="badge">5 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="i3" />
+          <label for="i3">Installer mobilier configuration « Bar »</label>
+          <span class="badge">6 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="i4" />
+          <label for="i4">Activer scène lumière « Bar » + playlist</label>
+          <span class="badge">1 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="i5" />
+          <label for="i5">Poser signalétique B (enseigne, ardoise, menu)</label>
+          <span class="badge">4 min</span>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="i6" />
+          <label for="i6">Valider état des lieux + check ouverture</label>
+          <span class="badge">2 min</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INCIDENTS -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">5 · Incidents &amp; responsabilités</span>
+      <h2>Quand quelque chose casse, c'est tracé.</h2>
+      <p>Chaque incident est signalé pendant le switch, photo à l'appui, et imputé selon des règles connues à l'avance.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="bo">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Opérateur</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Statut</th>
+            <th>Imputation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>14/05/2026 15:18</td>
+            <td>Café Lumière</td>
+            <td>Casse</td>
+            <td>2 verres mutualisés cassés en salle.</td>
+            <td><span class="badge badge--ok">Clos</span></td>
+            <td>Refacturation forfait casse</td>
+          </tr>
+          <tr>
+            <td>09/05/2026 18:22</td>
+            <td>Cellier &amp; Cie</td>
+            <td>IT</td>
+            <td>TPE B non détecté en début de créneau.</td>
+            <td><span class="badge badge--warn">Résolu — délai 12 min</span></td>
+            <td>Sans suite (réseau OK depuis)</td>
+          </tr>
+          <tr>
+            <td>02/05/2026 15:42</td>
+            <td>Café Lumière</td>
+            <td>Nettoyage</td>
+            <td>Plan de travail non dégraissé en fin de service.</td>
+            <td><span class="badge badge--err">À régler</span></td>
+            <td>Pénalité 25 € — opérateur A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notice mt-3">
+      <span aria-hidden="true">ℹ️</span>
+      <div><strong>Règle d'imputation par défaut.</strong> Le matériel mutualisé est couvert par un forfait casse mensuel. Le matériel dédié est à charge de l'opérateur. Les écarts de nettoyage déclenchent une pénalité barémique.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container center">
+    <h2>Et concrètement, qu'est-ce qu'il faut acheter ?</h2>
+    <p class="lead" style="margin-inline:auto">Tout ce qui apparaît dans cette démo est livrable. Composez en quelques clics le kit Switch adapté à votre local.</p>
+    <div class="flex" style="justify-content:center; margin-top: 18px;">
+      <a class="btn btn-primary" href="marketplace.html#configurateur">Composer mon kit →</a>
+      <a class="btn btn-ghost" href="backoffice.html">Voir le back-office</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div>© <span data-year>2026</span> Switch — démo concept. Données fictives.</div>
+    <div class="flex">
+      <a href="https://github.com/chtabay/Switch" target="_blank" rel="noopener">Repo GitHub</a>
+      <a href="index.html">Accueil</a>
+      <a href="marketplace.html">Marketplace</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
